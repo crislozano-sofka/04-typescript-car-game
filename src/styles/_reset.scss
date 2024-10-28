@@ -1,0 +1,26 @@
+@use "./variables" as variables;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+body {
+    background-color: variables.$background-color;
+}
+a {
+    text-decoration: none;
+    color: variables.$text-color;
+    
+}
+ul li {
+    list-style: none;
+}
+button{
+    border: none;
+    outline: none;
+}

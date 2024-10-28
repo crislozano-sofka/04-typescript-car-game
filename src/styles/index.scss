@@ -1,0 +1,44 @@
+@use "variables" as varibales;
+@use "reset";
+
+#app{
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primary_button, .secondary_button{
+    padding: 10px 40px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all .2s ease-in;
+    &:disabled{
+        background-color: #eee!important;
+        color: #4b4b4b!important;
+        border-color: #eee!important;
+        cursor: not-allowed!important;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+.primary_button{
+    background: varibales.$primary-color;
+    color: #fff;
+    &:hover{
+        background: #00000000;
+        color: varibales.$primary-color;
+        border: 1px solid varibales.$primary-color;
+    }
+}
+.secondary_button{
+    background: #00000000;
+    color: varibales.$primary-color;
+    border: 1px solid varibales.$primary-color;
+    &:hover{
+        background: varibales.$primary-color;
+        color: #fff;
+    }
+}
